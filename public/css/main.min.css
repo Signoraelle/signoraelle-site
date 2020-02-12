@@ -5,6 +5,22 @@ html {
 	-webkit-text-size-adjust: 100%
 }
 
+.titolo {
+	font-size: 2em;
+	font-weight: lighter;
+  margin: 0.67em 0;
+  font-family: 'Helvetica';
+	transition: font-weight .20s ease-in-out;
+}
+
+.titolo:hover {
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+			
+
+
 body {
 	margin: 0
 }
@@ -1130,7 +1146,7 @@ body {
 	text-rendering: optimizeLegibility
 }
 
-h1,
+
 h2,
 h3,
 h4,
@@ -1142,8 +1158,26 @@ p {
 
 h1 {
 	font-size: 38px;
-	margin: 0 auto 10px
-}
+	margin: 0 auto 10px;
+	
+		font-family: 'Source Sans Pro';
+		font-weight: 1 999;
+	}
+	
+	.source-sans, .source-sans2, .source-sans3 {
+		font-family: 'Source Sans Pro';
+		transition: font-weight .45s ease-out;
+	}
+	
+	.source-sans:hover, .source-sans2:hover {
+		font-weight: 999;
+	}
+	.source-sans3:hover {
+		font-weight: 200;
+	} 
+	
+	
+
 
 h2 {
 	font-size: 32px
@@ -1262,40 +1296,10 @@ a {
 	left: 2%
 }
 
-@font-face {
-	font-family: Sailec;
-	src: url(../fonts/Sailec-Bold.eot);
-	src: local('Sailec Bold'), local('Sailec-Bold'), url(../fonts/Sailec-Boldd41d.eot?#iefix) format('embedded-opentype'), url(../fonts/Sailec-Bold.woff2) format('woff2'), url(../fonts/Sailec-Bold.woff) format('woff'), url(../fonts/Sailec-Bold.ttf) format('truetype');
-	font-weight: 700;
-	font-style: normal
-}
 
-@font-face {
-	font-family: 'Apercu Mono';
-	src: url(../fonts/Apercu-Mono.eot);
-	src: local('Apercu Mono'), local('Apercu-Mono'), url(../fonts/Apercu-Monod41d.eot?#iefix) format('embedded-opentype'), url(../fonts/Apercu-Mono.woff2) format('woff2'), url(../fonts/Apercu-Mono.woff) format('woff'), url(../fonts/Apercu-Mono.ttf) format('truetype');
-	font-weight: 400;
-	font-style: normal
-}
-
-@font-face {
-	font-family: Apercu;
-	src: url(../fonts/Apercu-LightItalic.eot);
-	src: local('Apercu Light Italic'), local('Apercu-LightItalic'), url(../fonts/Apercu-LightItalicd41d.eot?#iefix) format('embedded-opentype'), url(../fonts/Apercu-LightItalic.woff2) format('woff2'), url(../fonts/Apercu-LightItalic.woff) format('woff'), url(../fonts/Apercu-LightItalic.ttf) format('truetype');
-	font-weight: 300;
-	font-style: italic
-}
-
-@font-face {
-	font-family: Apercu;
-	src: url(../fonts/Apercu-Light.eot);
-	src: local('Apercu Light'), local('Apercu-Light'), url(../fonts/Apercu-Lightd41d.eot?#iefix) format('embedded-opentype'), url(../fonts/Apercu-Light.woff2) format('woff2'), url(../fonts/Apercu-Light.woff) format('woff'), url(../fonts/Apercu-Light.ttf) format('truetype');
-	font-weight: 300;
-	font-style: normal
-}
 
 body {
-	font-family: Apercu, Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 	font-size: 20px;
 	line-height: 1.65
 }
@@ -1364,23 +1368,13 @@ p a {
 	text-decoration: none
 }
 
-h1 a,
+
 h2 a,
 h3 a,
 h4 a,
 h5 a,
 h6 a {
 	font-family: Sailec, Helvetica, sans-serif
-}
-
-.h1,
-h1 {
-	font-size: 48px;
-	line-height: 1.45;
-	font-family: Sailec, Helvetica, sans-serif;
-	font-weight: 700;
-	color: #000;
-	margin-bottom: 25px
 }
 
 .h1.white,
