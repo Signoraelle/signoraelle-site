@@ -90,9 +90,9 @@
 			transition: all 300ms linear;
 		}
 
-		.switch-wrap p span:nth-child(2):before {
+		/* .switch-wrap p span:nth-child(2):before {
 			opacity: 0;
-		}
+		} */
 
 		#switch,
 		#circle {
@@ -103,44 +103,46 @@
 
 		#switch {
 			width: 60px;
-			height: 8px;
-			margin: 0 auto;
+			height: 20px;
+			top: 25px;
 			text-align: center;
-			border: 2px solid #000;
+			border: 2px solid black;
 			border-radius: 27px;
-			background: #000;
+			background: white;
 			position: relative;
 			display: inline-block;
+			right: 50px;
 		}
 
 		#circle {
 			position: absolute;
-			top: -11px;
-			left: -13px;
-			width: 26px;
-			height: 26px;
+		
+			width: 20px;
+			height: 20px;
 			border-radius: 50%;
-			box-shadow: 0 4px 4px rgba(26, 53, 71, 0.25), 0 0 0 1px rgba(26, 53, 71, 0.07);
-			background: #000;
+			box-shadow: 0 4px 4px rgba(26, 53, 71, 0.25), 0 0 0 1px cdcdcd(26, 53, 71, 0.07);
+			background: black;
 		}
 
 		.switched {
-			border-color: #fff !important;
-			background: #fff !important;
+			border-color:white!important;
+			background: black !important;
 		}
 
 		.switched #circle {
-			left: 43px;
-			background: #fff;
+			left: 40px;
+			background:white ;
 		}
 
 		/* #Light
 ================================================== */
 
 		body.light {
-			background-color: #1f2029;
+			background-color:#000;
 		}
-
+		body.light .input{
+	color: #fff;
+}
 		body.light .cursor,
 		body.light .cursor2,
 		body.light .cursor3 {
@@ -210,6 +212,7 @@
 		body.light .switch-wrap p span:nth-child(1):before {
 			opacity: 0;
 		}
+		body.light .menut
 	</style>
 
 </head>
@@ -222,6 +225,7 @@
 	<div class='cursor3' id="cursor3"></div>
 
 	<!-- switcher theme -->
+
 	<div style="  float:right">
 		<div class="switch-wrap">
 			<div id="switch" class="hover-target">
@@ -231,11 +235,45 @@
 	</div>
 
 
+	<nav role="navigation">
+		<div id="menuToggle">
+			<!--
+			A fake / hidden checkbox is used as click reciever,
+			so you can use the :checked selector on it.
+			-->
+			<input type="checkbox" />
+			
+			<!--
+			Some spans to act as a hamburger.
+			
+			They are acting like a real hamburger,
+			not that McDonalds stuff.
+			-->
+			<span></span>
+			<span></span>
+			<span></span>
+			
+			<!--
+			Too bad the menu has to be inside of the button
+			but hey, it's pure CSS magic.
+			-->
+			<ul id="menu">
+			
+		
+				<a href="/images/Alice,Casadei_cv.pdf" ><li>Resume</li></a>
+				<a href="mailto:alicecasadei@icloud.com?subject="><li>Email Me</li></a>
+
+			
+			</ul>
+		</div>
+	</nav>
+	
 
 		<main id="content" role="main">
 			<div class="page-header">
 				<div class="content">
-					<p class="titolo">Alice Casadei</p>
+
+					<p class="titolo"> Alice Casadei</p>
 					<p class="sub-header">
 						UX / UI Designer, Web Developer </p>
 			</div>
@@ -308,7 +346,7 @@
 					</section>
 
 					<section class="bio">
-						<div class="section-title">Information</div>
+						<div class="section-">Information</div>
 						<div class="content">
 							<div class="text">
 								<h2>Alice Casadei , Rimini, Italy. </h2>
