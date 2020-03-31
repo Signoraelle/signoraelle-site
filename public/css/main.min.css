@@ -1460,7 +1460,7 @@ h4.white {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   position: absolute;
-  left: -130px;
+
   top: -webkit-calc((100vh - 80vh)/ 2);
   top: calc((100vh - 80vh) / 2);
   -webkit-transform-origin: top right;
@@ -1468,7 +1468,6 @@ h4.white {
   -ms-transform-origin: top right;
   transform-origin: top right;
   text-align: right;
-  width: 150px;
   color: #bfbfbf;
   font-size: 12px;
   font-family: "Apercu Mono", Monaco, monospace;
@@ -1800,11 +1799,11 @@ h4.white {
     width: 85vw;
   }
   .project-section .projects .project img {
-    left: 50%;
-    width: 45%;
+    left: auto;
+    width: 10%;
   }
   .project-section .projects .project .text {
-    width: 45%;
+    width: 50%;
   }
   .project-section .projects .project .text .motto {
     font-size: 16px;
