@@ -1190,7 +1190,7 @@ h2 {
   font-size: 32px;
 }
 
-h3 {
+ {
   font-size: 24px;
 }
 
@@ -1409,7 +1409,6 @@ h2.white {
 h3 {
   font-size: 36px;
   line-height: 1.35;
-  font-family: Sailec, Helvetica, sans-serif;
   font-weight: 700;
   color: #000;
   margin-top: 10px;
@@ -1435,7 +1434,7 @@ h3.bold {
 h4 {
   font-size: 22px;
   line-height: 1.65;
-  font-family: Sailec, Helvetica, sans-serif;
+
   font-weight: 700;
   color: #000;
 }
@@ -1717,10 +1716,11 @@ h4.white {
 
 .project-section .projects .project img.full {
   top: -2.5%;
-  right: -5%;
+  right: -15%;
   height: 105%;
   width: auto;
   left: unset;
+
   -webkit-transform: scale(1.02, 1.02);
   -ms-transform: scale(1.02, 1.02);
   transform: scale(1.02, 1.02);
