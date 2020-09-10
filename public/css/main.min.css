@@ -5,11 +5,13 @@ html {
 }
 
 .titolo {
-  font-size: 2em;
+  text-transform: uppercase;
+  font-size: 3em;
   font-weight: bolder;
-  margin: 0.67em 0;
-  font-family: "Helvetica";
+  margin: 0.3em 0;
+  font-family: "DIN Condensed";
   transition: font-weight 0.2s ease-in-out;
+  color: #000000;
 }
 
 .titolo:hover {
@@ -115,7 +117,7 @@ small {
 
 sub,
 sup {
-  font-size: 75%;
+  font-size: 80%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -1167,14 +1169,14 @@ h1 {
   font-size: 38px;
   margin: 0 auto 10px;
 
-  font-family: "Source Sans Pro";
+  font-family: "DIN Condensed";
   font-weight: 1 999;
 }
 
 .source-sans,
 .source-sans2,
 .source-sans3 {
-  font-family: "Source Sans Pro";
+  font-family: "Kefa";
   transition: font-weight 0.45s ease-out;
 }
 
@@ -1304,7 +1306,7 @@ a {
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: Kefa;
   font-size: 20px;
   line-height: 1.65;
 }
@@ -1354,16 +1356,16 @@ body #universe {
 
 span {
   font-size: 14px;
-  font-family: Apercu, Helvetica, sans-serif;
+  font-family: Kefa,'Open Sans';
 }
 
 .p,
 p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.75;
-  font-family: Apercu, Helvetica, sans-serif;
-  font-weight: 300;
-  color: #000;
+  font-family: Kefa,'Open Sans';
+  font-weight: 100;
+  color: #9b9b9b;
   margin-bottom: 20px;
 }
 
@@ -1378,7 +1380,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  font-family: Sailec, Helvetica, sans-serif;
+  font-family: 'DIN Condensed','Open Sans';
 }
 
 .h1.white,
@@ -1395,7 +1397,7 @@ h1.green {
 h2 {
   font-size: 38px;
   line-height: 1.45;
-  font-family: Sailec, Helvetica, sans-serif;
+  font-family: 'DIN Condensed','Open Sans';
   font-weight: 700;
   color: #000;
 }
@@ -1473,7 +1475,7 @@ h4.white {
   text-align: right;
   color: #bfbfbf;
   font-size: 12px;
-  font-family: "Apercu Mono", Monaco, monospace;
+  font-family: 'Kefa','Open Sans';
 }
 
 @media screen and (max-width: 639px) {
@@ -1542,7 +1544,7 @@ h4.white {
   }
   .p,
   p {
-    font-size: 17px;
+    font-size: 16px;
   }
   .text-link-clone,
   a.text-link {
@@ -1583,7 +1585,7 @@ h4.white {
 }
 
 .page-header .content .sub-header {
-  font-family: "Apercu Mono", Monaco, monospace;
+  font-family: 'Kefa','Open Sans';
   color: #6d6d6d;
 }
 
@@ -1592,7 +1594,7 @@ h4.white {
     width: 83.66666667%;
   }
   .page-header .content .sub-header {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 
@@ -1759,7 +1761,7 @@ h4.white {
   left: 0;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.8);
-  font-family: "Apercu Mono", Monaco, monospace;
+  font-family: 'Kefa','Open Sans';
 }
 
 .project-section .projects .project.black .text .motto,
@@ -1944,7 +1946,7 @@ h4.white {
 }
 
 .bio .content .social {
-  font-family: "Apercu Mono", Monaco, monospace;
+  font-family: 'Kefa','Open Sans';
   font-size: 12px;
   margin-top: 8vh;
 }
@@ -2006,7 +2008,8 @@ body {
   /* make it look decent enough */
   background: #232323;
   color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
+ font-family: 'Kefa','Open Sans';
+
 }
 
 #menuToggle {
