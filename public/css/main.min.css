@@ -1361,7 +1361,7 @@ span {
 
 .p,
 p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.75;
   font-family: Kefa,'Open Sans';
   font-weight: 100;
@@ -1410,12 +1410,41 @@ h2.white {
 .h3,
 h3 {
   font-size: 30px;
-  line-height: 1.35;
+  
   font-weight: 700;
   color: #000;
   margin-top: -50px;
   margin-bottom: 10px;
+  
+ background-position-y: -0%;
+ background-image: linear-gradient( transparent 50%, #67b3e8 50%);
+ transition: background .3s ease;
+ background-size: 2px;
+ background-size: auto 175%;
+ text-decoration: none;
+ 
 }
+@media (min-width: 992px) {
+ .fancy__underline a:hover, .fancy__underline span:hover {
+    background-position-y: 100%;
+ }
+/*   
+  text-decoration: none;
+  background-image: linear-gradient(#5e5e5e, #222b40),
+    linear-gradient(rgb(251, 176, 176), rgb(47, 0, 255)),
+    linear-gradient(#feb2b2, #feb2b2);
+  background-size: 5px 1px, 100% 1px, 0 1px;
+  background-position: calc(20px * -1) 80%, 80% 80%, 0 80%;
+  background-repeat: no-repeat;
+  transition: background-size 2s linear, background-position 2s linear; */
+}
+
+h3:hover {
+  background-size: 20px 2px, 0 2px, 100% 2px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+}
+
+
 
 .h3.white,
 h3.white {
