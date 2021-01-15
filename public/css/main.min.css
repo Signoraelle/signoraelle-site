@@ -1416,12 +1416,7 @@ h3 {
   margin-top: -50px;
   margin-bottom: 10px;
   
- background-position-y: -0%;
- background-image: linear-gradient( transparent 50%, #67b3e8 50%);
- transition: background .3s ease;
- background-size: 2px;
- background-size: auto 175%;
- text-decoration: none;
+ 
  
 }
 @media (min-width: 992px) {
